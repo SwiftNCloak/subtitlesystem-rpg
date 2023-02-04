@@ -85,4 +85,5 @@ body{
 .cd-btn:hover{
     background: #16161D;
     color: #e8e6e6;
+    cursor: pointer;
 }
