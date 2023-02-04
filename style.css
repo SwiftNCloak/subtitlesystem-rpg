@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'DialogText';
+    src: url('./fonts/8bitOperatorPlus8-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'DialogName';
+    src: url('./fonts/8bitOperatorPlus-Bold.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #00b140;
+}
+
+::selection{
+    background: #16161D;
+    color: #e8e6e6;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+}
+
+.container-dialog{
+    background: #e8e6e6;
+    max-width: 500px;
+    padding: 15px;
+    margin-top: 300px;
+    border-radius: 5px;
+    border: 3px solid #16161D;
+    color: #16161D;
+    box-shadow: 5px 10px #16161D;
+}
+
+.cd-font{
+    font-family: 'DialogName';
+    font-size: 20px;
+    margin-top: -2px;
+}
+
+.cd-text{
+    margin-top: -5px;
+    background: #e8e6e6;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    resize: none;
+    width: 495px;
+    max-height: 300px;
+    font-family: 'DialogText';
+}
+
+.cd-btn{
+    border: none;
+    background: #e8e6e6;
+    color: #16161D;
+    padding: 3px 10px;
+    margin-left: 425px;
+    font-family: 'DialogName';
+}
+
+.cd-btn:hover{
+    background: #16161D;
+    color: #e8e6e6;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SUBTITLE SYSTEM - Screen Record This - Mark</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <audio id="myAudio">
+            <source src="subtitles.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="container">
+            <div class="container-dialog">
+                <h1 class="cd-font">MARCUS</h1> <!--CHANGE THE NAME HERE-->
+                <textarea class="cd-text" spellcheck="false" onkeydown="playAudio()" id="textBox"></textarea>
+                <button class="cd-btn" onclick="removeText()">▼ SKIP</button>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var x = document.getElementById("myAudio"); 
+        var txt = document.getElementById("textBox"); 
+
+        function playAudio() { 
+          x.currentTime = 0;
+          x.play(); 
+        }
+
+        function removeText(){
+            txt.value = "";
+            txt.focus();
+        }
+    </script>
+</html>
