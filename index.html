@@ -50,5 +50,15 @@
                 focusText();
             }
         }, false);
+
+        document.addEventListener('keypress', (event) => {
+            var key;
+            if(window.event) {              
+                key = event.keyCode;
+            } else if(event.which){                 
+                key = event.which;
+            }
+            focusText(String.fromCharCode(key));
+        }, false);
     </script>
 </html>
