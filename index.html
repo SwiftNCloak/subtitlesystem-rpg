@@ -18,7 +18,7 @@
             <div class="container-dialog">
                 <h1 class="cd-font">MARCUS</h1> <!--CHANGE THE NAME HERE-->
                 <textarea class="cd-text" spellcheck="false" onkeydown="playAudio()" id="textBox"></textarea>
-                <button class="cd-btn" onclick="removeText()">▼ SKIP</button>
+                <button class="cd-btn" onclick="removeText()" id="cd-btn">▼ SKIP</button>
             </div>
         </div>
     </body>
@@ -36,5 +36,12 @@
             txt.value = "";
             txt.focus();
         }
+
+        document.addEventListener('keyup', (event) => {
+            var name = event.key;
+            if (name === 'Enter') {
+                removeText();
+            }
+        }, false);
     </script>
 </html>
